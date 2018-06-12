@@ -1,0 +1,123 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.szk.jdbc</groupId>
+  <artifactId>jdbcTemplate</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>jdbcTemplate Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	    <!-- spring 版本号 -->
+		<spring.version>4.3.9.RELEASE</spring.version>
+		<!-- log4j 版本号 -->
+		<log4j.version>1.2.16</log4j.version>
+		<!-- junit 版本号 -->
+		<junit.version>4.11</junit.version>
+		<!-- aspectj 版本号 -->
+		<aspectj.version>1.5.4</aspectj.version>
+  </properties>
+
+  <dependencies>
+  	<!-- Junit -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+    </dependency>
+    
+    <!-- Spring core 核心包 -->
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-core</artifactId>
+    	<version>${spring.version}</version>
+    </dependency>
+    
+    <!-- spring web 对web的支持 -->
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-web</artifactId>
+    	<version>${spring.version}</version>
+    </dependency>
+    
+    <!-- spring oxm 对ORM的支持 -->
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-oxm</artifactId>
+    	<version>${spring.version}</version>
+    </dependency>
+    
+    <!-- spring tx 对事务管理的支持 -->
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-tx</artifactId>
+    	<version>${spring.version}</version>
+    </dependency>
+    
+    <!-- spring jdbc 对jdbc的支持 -->
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-jdbc</artifactId>
+    	<version>${spring.version}</version>
+    </dependency>
+    
+    <!-- spring mvc 对MVC框架的支持 -->
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-webmvc</artifactId>
+    	<version>${spring.version}</version>
+    </dependency>
+    
+    <!-- spring 测试支持 -->
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-test</artifactId>
+    	<version>${spring.version}</version>
+    </dependency>
+    
+    <!-- spring aop 对切面的支持 -->
+    <dependency>
+    	<groupId>org.springframework</groupId>
+    	<artifactId>spring-aop</artifactId>
+    	<version>${spring.version}</version>
+    </dependency>
+    
+    <!-- Aspectj 支持 -->
+    <dependency>
+    	<groupId>aspectj</groupId>
+    	<artifactId>aspectjrt</artifactId>
+    	<version>${aspectj.version}</version>
+    </dependency>
+    
+    <dependency>
+    	<groupId>aspectj</groupId>
+    	<artifactId>aspectjweaver</artifactId>
+    	<version>${aspectj.version}</version>
+    </dependency>
+    
+    <!-- dbcp 连接池 -->
+    <dependency>
+	    <groupId>commons-dbcp</groupId>
+	    <artifactId>commons-dbcp</artifactId>
+	    <version>1.4</version>
+	</dependency>	
+	
+	<!-- 数据库驱动 -->
+	<dependency>
+	    <groupId>mysql</groupId>
+	    <artifactId>mysql-connector-java</artifactId>
+	    <version>5.1.18</version>
+	</dependency>
+    
+    
+    
+    
+    
+    
+    
+  </dependencies>
+  <build>
+    <finalName>jdbcTemplate</finalName>
+  </build>
+</project>

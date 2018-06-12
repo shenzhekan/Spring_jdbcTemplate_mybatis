@@ -1,0 +1,4 @@
+create table spring_jdbc(
+	id int primary key auto_increment,
+	name varchar(20)
+);
